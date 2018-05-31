@@ -1,0 +1,49 @@
+<header>
+        <div class="clear"></div>
+        <div class="top--header-left">
+            <h2>أفضل مكان لأيجاد مستقل</h2>
+            <button class="btn dark--blue">أنشىء مشروع</button>
+        </div>
+        <div class="top--header-rigth">
+            <h2>هل تبحث عن عمل ؟ أخبرنا قصتك</h2>
+          <a href="/signup">
+            <button class="btn dark--red ">سجل حساب</button>
+          </a>
+        </div>
+    
+  </header>
+
+
+ <main>
+
+        <section class="projects">
+            <h2 class="text--right"> مئات المشاريع متاحة لك </h2>
+            <div class="projects--header">
+                <h3 class="inline--block">كل المشاريع </h3>
+                 <a href="/insertProject"><button class="btn lithg--blue pull--right">
+                   <i class="fas fa-plus-circle"></i>أنشىء مشروع</button></a>
+            </div>
+           
+            {{#each result}}
+            <div class="project">
+                <span class="pull--right">
+                    <a href="profile/{{this.user_id }}">
+                    <img src="img/imag.png
+                    " alt="profile-img">
+                    </a>
+                </span>
+             
+                <span class="pull--right">{{this.title}}</span>
+                <span class="pull--right">{{this.user_name}}</span>
+                <span class="pull--right">{{this.time}}</span>
+                <span class="pull--right">{{this.price}}</span>
+                <span class="pull--right">
+               <a href="/project/{{this.id}}"> <button class="btn lithg--red inline--block btn--bid">تقديم عرض</button>
+              </a></span>
+                <div class="clear"> </div>
+            </div>
+             {{/each}}
+
+            
+      
+    </main>

@@ -1,0 +1,22 @@
+<h1>admin panel</h1>
+<div>
+  <h3>user name</h3>
+<ul>
+   
+  {{#each result}}
+ <div class="delete">
+  
+  
+  <li>{{this.user_name}} {{this.email}}
+    
+    <button  class="x" id="{{this.id}}" >delete</button>
+
+  </li>
+      </div>
+  {{/each}}
+
+</ul>
+</div>
+
+
+</div>

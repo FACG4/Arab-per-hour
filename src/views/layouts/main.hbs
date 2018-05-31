@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{{>head}}
+
+</head>
+{{#if error}}
+{{body}}
+{{/if}}
+<body>
+  <nav>
+{{#if log}}
+{{>nav}}
+{{else}}
+{{>header}}
+{{/if}}
+</nav>
+  <main>
+    {{{body}}}
+  </main>
+  <footer>
+   {{>footer}}
+
+  </footer>
+
+ <script src="/js/dom.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+</html>
